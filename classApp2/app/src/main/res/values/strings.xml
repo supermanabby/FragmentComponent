@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">classApp2</string>
+    <string name="heading">TextView</string>
+    <string name="heading0">Gender Equality</string>
+    <string name="result">Result</string>
+    <string name="male">MALE</string>
+    <string name="female">FEMALE</string>
+    <string name="submit">Submit</string>
+    <string name="whenMaleIsChecked">Male is checked</string>
+</resources>

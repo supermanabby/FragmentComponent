@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Movies Quiz</string>
+    <string name="roll">Roll</string>
+    <string name="todo">TODO</string>
+    <string name="bollywood">Bollywood</string>
+    <string name="hollywood">Hollywood</string>
+</resources>
