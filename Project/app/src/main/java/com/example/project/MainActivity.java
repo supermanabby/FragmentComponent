@@ -14,13 +14,16 @@ import android.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity {
 
+    Button signUp ;
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
+        setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         Button button = findViewById(R.id.button);
+        signUp = findViewById(R.id.signUP);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,7 +34,19 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+
+        signUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, logIn.class);
+                startActivity(intent);
+            }
+        });
+
+
     }
+
+
 
 
 

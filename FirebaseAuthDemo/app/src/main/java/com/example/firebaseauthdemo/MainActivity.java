@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -30,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private TextView signIn ;
     ProgressDialog progressDialog;
     private FirebaseAuth firebaseAuth;
-
+    private Button nextPage;
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,13 +45,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         email = (EditText)(findViewById(R.id.email));
         password = (EditText)(findViewById(R.id.password));
         signIn = (TextView) (findViewById(R.id.signin));
-
+        nextPage = (Button)(findViewById(R.id.nextPage));
         signUp.setOnClickListener(this);
         signIn.setOnClickListener(this);
+        nextPage.setOnClickListener(this);
 
+        nextPage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, googleAuth.class);
+                startActivity(intent);
+            }
+        });
     }
-
-
     private void registerUser(){
 
         String getEmail = email.getText().toString();
@@ -84,6 +91,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
+
+
+
     public void onClick(View view){
             if(view == signUp){
                 registerUser();
@@ -91,5 +101,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             if (view == signIn){
 
             }
+
+
+
     }
+
+
 }
