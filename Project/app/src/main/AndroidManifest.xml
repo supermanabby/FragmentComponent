@@ -1,22 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.project">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.things.permission.MANAGE_GNSS_DRIVERS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true"/>
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="Home"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:icon="@drawable/logo_small"
+        android:label="Knai"
+        android:roundIcon="@drawable/logo_small"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".logIn"></activity>
+        <activity android:name=".GPS"></activity>
+        <activity android:name=".forgetPassword" />
+        <activity android:name=".login" />
+        <activity android:name=".afterLogin" />
+        <activity android:name=".register" />
         <activity
             android:name=".splashScreen"
             android:label="@string/title_activity_login" />
         <activity
             android:name=".MainActivity"
-            android:theme="@style/AppTheme.Launcher">
+            android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

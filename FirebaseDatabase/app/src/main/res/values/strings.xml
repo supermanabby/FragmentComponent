@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FirebaseDatabase</string>
+    <string name="heading">Welcome </string>
+    <string name="name">Name </string>
+    <string name="id">Reg. No. </string>
+    <string name="email">Email </string>
+    <string name="submit"> Submit</string>
+
+
+</resources>

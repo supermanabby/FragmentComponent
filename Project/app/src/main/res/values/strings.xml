@@ -20,6 +20,7 @@
         <item>About Us</item>
     </string-array>
 
+    <string name="valid_email">Please enter valid email</string>
     <string name="activity_title_about_us">About Us</string>
     <string name="activity_tile_privacy_policy">Privacy Policy</string>
     <string name="action_clear_all">Clear all</string>
@@ -33,4 +34,6 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+    <string name="heading">You are booked. Congragulations </string>
+    <string name="heading2">Enjoy Cutting</string>
 </resources>
